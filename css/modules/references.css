@@ -1,0 +1,74 @@
+/* .references-container {
+    margin-bottom: 8rem;
+    align-items: center;
+}
+
+.references-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.references-title {
+    text-align: center;
+}
+
+.quotation-mark p {
+    position: relative;
+}
+
+.quotation-mark {
+    border:none;
+    margin-bottom:-30px;
+}
+    
+.quotation-mark p:before { 
+    content: open-quote;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 260px;
+    position: absolute;
+    left: -30px;
+    top: -95px;
+    z-index: -1;
+    color: #fbd2c0;
+    opacity: 0.8;
+}  */
+
+.reference-container {
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4rem 0 10rem 0;
+}
+
+.reference-item {
+    position: relative;
+    padding: 7.5rem 0 0 5rem;
+}
+
+.reference-item-quote svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    fill: #fbd2c0;
+    opacity: 0.8;
+    max-height: 170px;
+    max-width: 170px;
+}
+
+.reference-item-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/*proc tam ma byt rozdil 2?
+no diky te relativni pozici na text/content to dostaneme jednoduse nad to
+ok 
+nicmene kdyz mas -1 tak hrozi nebezpeci ze se ti to dostane nekam pod container a nepujde to videt
+jo tak ja jsem to tam dala a chtela jsem to pak upravit, jen mi to furt nechtelo spadnout pod ten text,
+tak uz me to nehorazne stvalo, lol :D
+
+nemusi ale ja vetsinou davama na text 2 nebo 3..... ale je to jedno musi byt rozdil o jedno hlavne

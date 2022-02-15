@@ -1,0 +1,38 @@
+.slider {
+    background-color: #f7f6f4;
+    position: relative;
+}
+
+.slider-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 72rem;
+}
+
+.slider-photo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 100%;
+    min-height: 100%;
+    width: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.slider-content h1 {
+    margin: 0 0 3.5rem 0;
+}
+
+.slider-content .marker {
+    margin: 0 0 3.5rem 0;
+}
+
+.slider-cta {
+    margin: 3.5rem 0 0 0;
+}
+
+.slider-content {
+    padding: 10rem 0 14rem 3rem;
+    font-size: 24px;
+}
