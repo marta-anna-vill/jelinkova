@@ -1,5 +1,5 @@
 .slider {
-    background-color: #f7f6f4;
+    background: linear-gradient(180deg, rgba(214,209,213,1) 0%, rgba(220,214,218,1) 25%, rgba(230,221,226,1) 100%);
     position: relative;
 }
 
