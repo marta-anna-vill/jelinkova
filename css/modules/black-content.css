@@ -11,8 +11,8 @@
 .black-content-text {
     font-size: 17px;
     position: relative;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: #fbd2c0;
     padding: 4rem;
 }
 
@@ -22,7 +22,7 @@
     justify-content: center;
     height: 100%;
     padding: 3rem;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 
 .black-content-text-title h2 {
@@ -35,7 +35,7 @@
     position: absolute;
     top: calc(100% + 30px);
     left: 0;    
-    background-color: white;
+    background-color: black;
     width: 55px;
     height: 3px;
 }
