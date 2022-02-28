@@ -11,6 +11,8 @@ const Home = () => {
             ctaUrl="/about"
             image={topImagePhoto}
         />
+
+        // dalši komponenty ...
     );
 };
   

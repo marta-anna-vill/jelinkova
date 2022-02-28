@@ -10,13 +10,17 @@ export const TopImage = (props) => {
                     </div>
                     <div class="top-image-content">
                         <span class="marker">{props.marker}</span>
+                        
                         <h1>{props.title}</h1>
+
                         {props.perex}
+
                         {props.ctaUrl && (
                             <div class="top-image-cta">
                                 <Link className="btn btn-primary" to={props.ctaUrl}>{props.ctaName}</Link>
                             </div>
                         )}
+
                     </div>
                 </div>
             </div>
