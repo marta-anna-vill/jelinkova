@@ -38,52 +38,52 @@ const Home = () => {
         }
     ]
 
-        return (
-            <>
-                <TopImage
-                    title="Welcome"
-                    marker="Beauty studio"
-                    perex="to Slow Beauty Eco Salon, an Organic Beauty Salon in New York"
-                    ctaName="Contact us"
-                    ctaUrl="/about"
-                    image={topImagePhoto}
-                />
+    return (
+        <>
+            <TopImage
+                title="Welcome"
+                marker="Beauty studio"
+                perex="to Slow Beauty Eco Salon, an Organic Beauty Salon in New York"
+                ctaName="Contact us"
+                ctaUrl="/about"
+                image={topImagePhoto}
+            />
 
-                <Benefit data={benefitData} />
+            <Benefit data={benefitData} />
 
-                <ImageContent
-                    image={imageContentPhoto1}
-                    title="Test"
-                    perex="test perexu"
-                ></ImageContent>
-                <Banner
-                    title="What products do you have?"
-                    perex="Every single ingredient you put on your skin is information, every ingredient contains
+            <ImageContent
+                image={imageContentPhoto1}
+                title="Test"
+                perex="test perexu"
+            ></ImageContent>
+            <Banner
+                title="What products do you have?"
+                perex="Every single ingredient you put on your skin is information, every ingredient contains
                 messages
                 that communicate to every single cell in your skin."
-                    ctaName="Learn more"
-                    ctaUrl="https://nicepage.com/templates/preview/hair-nail-and-beauty-salon-21712?device=desktop"
-                    image={bannerImage}
-                />
-                <Reference
-                    title="Happy clients. That's what she said..."
-                    ref1="Being newly pregnant, I was very
+                ctaName="Learn more"
+                ctaUrl="https://nicepage.com/templates/preview/hair-nail-and-beauty-salon-21712?device=desktop"
+                image={bannerImage}
+            />
+            <Reference data={referenceData}
+                title="Happy clients. That's what she said..."
+                ref1="Being newly pregnant, I was very
                     happy to find Beauty Ecology Organic Salon's safe alternative! I'm so thankful that I no
                     longer leave the salon with an itchy and burning scalp."
-                    ref2="After finding I was allergic to my previous hair color, and being newly pregnant, I was very
+                ref2="After finding I was allergic to my previous hair color, and being newly pregnant, I was very
                     happy to find Beauty Ecology Organic Salon's safe alternative! I'm so thankful that I no
                     longer leave the salon with an itchy and burning scalp."
-                    ref3="After finding I was allergic to my previous hair color, and being newly pregnant, I was very
+                ref3="After finding I was allergic to my previous hair color, and being newly pregnant, I was very
                     happy to find Beauty Ecology Organic Salon's safe alternative! "
-                />
-                <BlackContent 
-                    title="Beauty Treatments"
-                    image={imageBlackContent}
-                />
-            </>
+            />
+            <BlackContent
+                title="Beauty Treatments"
+                image={imageBlackContent}
+            />
+        </>
 
-            // dalši komponenty ...
-        );
-    };
+        // dalši komponenty ...
+    );
+};
 
-    export default Home;
+export default Home;
