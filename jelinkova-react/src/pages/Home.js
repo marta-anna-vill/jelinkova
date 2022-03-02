@@ -13,44 +13,18 @@ import { Benefit } from "../modules/Benefit";
 import { Banner } from "../modules/Banner";
 import { Reference } from "../modules/Reference";
 import { BlackContent } from "../modules/BlackContent";
+import { contentHandler } from "./content/ContentHandler";
+import { homeContentData } from "./content/HomeContent";
 
 const Home = () => {
 
-    const benefitData = [
-        {
-            title: "title 1",
-            perex: "perex",
-            class: "background-black",
-            image: BenefitPhoto1
-        },
-        {
-            title: "title 2",
-            image: BenefitPhoto2
-        },
-        {
-            title: "title 3",
-            reverse: true,
-            image: BenefitPhoto3
-        },
-        {
-            title: "title 4",
-            reverse: true,
-            image: BenefitPhoto4
-        }
-    ]
+
 
     return (
         <>
-            <TopImage
-                title="Welcome"
-                marker="Beauty studio"
-                perex="to Slow Beauty Eco Salon, an Organic Beauty Salon in New York"
-                ctaName="Contact us"
-                ctaUrl="/about"
-                image={topImagePhoto}
-            />
+            <TopImage data={contentHandler(homeContentData, "TopImage", 1)} />
 
-            <Benefit data={benefitData} />
+            <Benefit data={contentHandler(homeContentData, "Benefit", 1)} />
 
             <ImageContent
                 image={imageContentPhoto1}

@@ -1,20 +1,21 @@
 export const Benefit = (props) => {
+    console.log(props)
     return (
-        <div class="medium-container">
-            <div class="benefit-container">
+        <div className="medium-container">
+            <div className="benefit-container">
                 
-                {props.data.map((item, index) => {
+                {props.data.items.map((item, index) => {
                     return(
-                        <div class={'benefit-item ' + (item.reverse ? 'reverse-item' : '')}>
-                            <div class={'benefit-item-content ' + item.class}>
-                                <div class="benefit-item-content-title">
+                        <div key={index} className={'benefit-item ' + (item.reverse ? 'reverse-item' : '')}>
+                            <div className={'benefit-item-content ' + item.class}>
+                                <div className="benefit-item-content-title">
                                     {item.title}
                                 </div>
-                                <div class="benefit-item-content-text">
+                                <div className="benefit-item-content-text">
                                     {item.perex}
                                 </div>
                             </div>
-                            <div class="benefit-item-photo">
+                            <div className="benefit-item-photo">
                                 <img src={item.image} alt=""/>
                             </div>
                         </div>

@@ -5,14 +5,14 @@ const Layout = () => {
     return (
         <>
             <header>
-                <div class="base-container">
-                    <div class="header">
-                        <div class="header-logo">
+                <div className="base-container">
+                    <div className="header">
+                        <div className="header-logo">
                             <a href="/">
                                 <img src={logo} alt="Logo-massages" />
                             </a>
                         </div>
-                        <nav class="header-menu">
+                        <nav className="header-menu">
                             <ul>
 
                                 <li>
@@ -23,14 +23,14 @@ const Layout = () => {
                                 </li>
                             </ul>
                         </nav>
-                        <div class="header-cta">
+                        <div className="header-cta">
                             <Link className="btn btn-primary" to="/about">Contact us</Link>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <div class="header-space"></div>
+            <div className="header-space"></div>
 
             <Outlet />
 
