@@ -65,7 +65,7 @@ const Home = () => {
                 ctaUrl="https://nicepage.com/templates/preview/hair-nail-and-beauty-salon-21712?device=desktop"
                 image={bannerImage}
             />
-            <Reference data={referenceData}
+            <Reference 
                 title="Happy clients. That's what she said..."
                 ref1="Being newly pregnant, I was very
                     happy to find Beauty Ecology Organic Salon's safe alternative! I'm so thankful that I no
