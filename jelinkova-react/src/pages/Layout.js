@@ -33,6 +33,10 @@ const Layout = () => {
             <div class="header-space"></div>
 
             <Outlet />
+
+            <footer>
+                
+            </footer>
         </>
     )
 };

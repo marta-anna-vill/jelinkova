@@ -1,0 +1,28 @@
+.reference-container {
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4rem 0 10rem 0;
+    .reference-item {
+        position: relative;
+        padding: 7.5rem 0 0 5rem;
+        .reference-item-quote svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            fill: #fbd2c0;
+            opacity: 0.8;
+            max-height: 170px;
+            max-width: 170px;
+        }
+        .reference-item-content {
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+
+
+

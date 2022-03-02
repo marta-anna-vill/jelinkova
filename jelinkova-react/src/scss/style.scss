@@ -1,12 +1,20 @@
+// variables
+@import "./_base/_variables.scss";
 
 // base
 @import "./_base/_base.scss";
 @import "./_base/_header.scss";
 @import "./_base/_layout.scss";
 @import "./_base/_footer.scss";
+@import "./_base/_typography.scss";
 
 // components
 @import "./_components/_buttons.scss";
 
 // modules
 @import "./_modules/_top-image.scss";
+@import "./_modules/_image-content.scss";
+@import "./_modules/_benefit.scss";
+@import "./_modules/_banner.scss";
+@import "./_modules/_reference.scss";
+@import "./_modules/_black-content.scss";
