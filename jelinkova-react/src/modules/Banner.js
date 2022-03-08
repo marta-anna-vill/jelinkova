@@ -1,4 +1,5 @@
 export const Banner = (props) => {
+    props = props.data
     return (
         <div className="banner background-soft-gradient">
             <img className="banner-background-image" src={props.image} alt="" />

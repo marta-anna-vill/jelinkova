@@ -1,4 +1,5 @@
 export const ImageContent = (props) => {
+    props = props.data
     return (
         <div className="image-content">
             <div className="base-container">

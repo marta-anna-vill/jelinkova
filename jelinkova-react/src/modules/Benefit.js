@@ -1,6 +1,5 @@
 export const Benefit = (props) => {
-    console.log(props)
-    return (
+        return (
         <div className="medium-container">
             <div className="benefit-container">
                 
