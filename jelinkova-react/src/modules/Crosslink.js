@@ -1,5 +1,4 @@
 export const Crosslink = (props) => {
-    console.log(props)
     return (
         <div className="crosslink-coffee-wrapper ">
             <div className="base-container">

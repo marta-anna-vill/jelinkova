@@ -7,12 +7,17 @@ import { BlackContent } from "../modules/BlackContent";
 import { Crosslink } from "../modules/Crosslink";
 import { contentHandler } from "./content/ContentHandler";
 import { homeContentData } from "./content/HomeContent";
+import { Icon } from './Icons';
 
 const Home = () => {
 
     return (
         <>
             <TopImage data={contentHandler(homeContentData, "TopImage", 1)} />
+
+            {/* <Icon
+            title="facebook"
+            ></Icon> */}
 
             <Benefit data={contentHandler(homeContentData, "Benefit", 1)} />
 

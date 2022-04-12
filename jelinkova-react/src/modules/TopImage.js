@@ -19,7 +19,7 @@ export const TopImage = (props) => {
 
                         {props.ctaUrl && (
                             <div className="top-image-cta">
-                                <Link className="btn btn-primary" to={props.ctaUrl}>{props.ctaName}</Link>
+                                <Link className="btn btn-primary" to={props.ctaUrl} rel="noopener">{props.ctaName}</Link>
                             </div>
                         )}
 

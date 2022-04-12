@@ -11,7 +11,7 @@ export const Banner = (props) => {
                         <div className="banner-cta">
                             <a className="btn btn-default"
                                 href={props.ctaUrl}
-                                rel="noopenner" target="_blank">{props.ctaName}</a>
+                                rel="noreferrer" target="_blank">{props.ctaName}</a>
                         </div>
                     </div>
                 </div>

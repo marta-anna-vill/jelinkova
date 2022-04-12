@@ -17,7 +17,7 @@ export const ImageContent = (props) => {
                             {props.perex}
                         </div>
                         <div className="image-content-link">
-                            <a href="https://www.w3schools.com/css/css_margin.asp" rel="noopenner" target="_blank">Learn
+                            <a href="https://www.w3schools.com/css/css_margin.asp" rel="noreferrer" target="_blank">Learn
                                 more</a>
                         </div>
                     </div>

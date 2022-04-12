@@ -14,6 +14,7 @@ export const Benefit = (props) => {
                                     {item.perex}
                                 </div>
                             </div>
+                            
                             <div className="benefit-item-photo">
                                 <img src={item.image} alt=""/>
                             </div>
