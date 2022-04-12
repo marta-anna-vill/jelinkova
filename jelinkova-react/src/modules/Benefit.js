@@ -18,7 +18,7 @@ export const Benefit = (props) => {
                             <div className="benefit-item-photo">
                                 <img src={item.image} alt=""/>
                             </div>
-                        </div>
+                        </div> 
                     )
                 })}
 
