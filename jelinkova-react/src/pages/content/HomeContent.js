@@ -25,22 +25,25 @@ export const homeContentData = [
         id: 1,
         items: [
             {
-                title: "title 1",
-                perex: "perex",
+                title: "Touch",
+                perex: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer vulputate sem a nibh rutrum consequat. Suspendisse nisl. Maecenas libero.",
                 class: "background-black",
                 image: BenefitPhoto1
             },
             {
-                title: "title 2",
+                title: "Heal",
+                perex: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer vulputate sem a nibh rutrum consequat. Suspendisse nisl. Maecenas libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer vulputate sem a nibh rutrum consequat. Suspendisse nisl. Maecenas libero.",
                 image: BenefitPhoto2
             },
             {
-                title: "title 3",
+                title: "Calm",
+                perex: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
                 reverse: true,
                 image: BenefitPhoto3
             },
             {
-                title: "title 4",
+                title: "Relax",
+                perex: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer vulputate sem a nibh rutrum consequat. Suspendisse nisl. Maecenas libero.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer vulputate sem a nibh rutrum consequat.",
                 reverse: true,
                 image: BenefitPhoto4
             }

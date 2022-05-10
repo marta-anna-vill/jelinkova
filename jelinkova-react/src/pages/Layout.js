@@ -8,7 +8,7 @@ import imageFooter from '../images/footer-photo.jpg';
 const Layout = () => {
     return (
         <>
-            <header>
+            {/* <header>
                 <div className="base-container">
                     <div className="header">
                         <div className="header-logo">
@@ -35,13 +35,13 @@ const Layout = () => {
                         </div>
                     </div>
                 </div>
-            </header>
+            </header> */}
 
             <div className="header-space"></div>
 
             <Outlet />
 
-            <footer>
+            {/* <footer>
                 <div className="footer-top">
                     <div className="base-container">
                         <div className="footer-top-inner">
@@ -95,7 +95,7 @@ const Layout = () => {
                     </div>
                 </div>
 
-            </footer>
+            </footer> */}
         </>
     )
 };

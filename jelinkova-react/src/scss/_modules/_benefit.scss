@@ -1,25 +1,51 @@
-.benefit-container {    
+.benefit-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: -17rem;
-    margin-bottom: 5rem;
+    grid-template-columns: 1fr;
+    // margin-top: -17rem;
+    // margin-bottom: 5rem;
+    margin: -17rem 2rem 5rem 2rem;
     position: relative;
     z-index: 1;
-    .benefit-item {
-        display: grid;
+    
+    @include media(xl) {
         grid-template-columns: 1fr 1fr;
-        &.reverse-item .benefit-item-photo {
-            order: -1;       
+    }
+
+    .benefit-item {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+
+        @include media(xs) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
+
+        &:nth-child(even) {
+            .benefit-item-photo {
+                order: -1;
+                @include media(xl) {
+                    order: 1;
+                }
+            }
+        }
+
+        &.reverse-item .benefit-item-photo {
+            @include media(xl) {
+                order: -1;
+            }
+        }
+
         .benefit-item-content {
-            background-color: #fbd2c0;
+            background-color: $main-color;
             text-align: center;
             padding: 5rem 2rem;
+
             .benefit-item-content-title {
                 font-size: 24px;
                 font-weight: 700;
                 position: relative;
                 margin-bottom: 40px;
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -31,33 +57,47 @@
                     background: black;
                 }
             }
+
             &.background-black {
                 background-color: black;
                 color: white;
+
                 .benefit-item-content-title::after {
                     background: white;
                 }
-            } 
+            }
+        }
+
+        .benefit-item-photo {
+            position: relative;
+            min-height: 30rem;
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                min-height: 100%;
+                max-height: 100%;
+                object-fit: cover;
+            }
         }
     }
+
+    @include media(xs) {}
+
+    @include media(sm) {}
+
+    @include media(md) {}
+
+    @include media(lg) {}
+
+    @include media(xxl) {}
 }
 
 
+
+// zjistit, co toto dělá...
 .benefit-item-content.background-white {
     background-color: white;
 }
-
-.benefit-item-photo {
-    position: relative;
-    min-height: 30rem;
-    img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        min-height: 100%;
-        max-height: 100%;
-        object-fit: cover;
-    }
-}
-

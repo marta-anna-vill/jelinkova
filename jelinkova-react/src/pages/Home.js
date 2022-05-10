@@ -13,17 +13,19 @@ const Home = () => {
 
     return (
         <>
-            <TopImage data={contentHandler(homeContentData, "TopImage", 1)} />
+            {/* <TopImage data={contentHandler(homeContentData, "TopImage", 1)} /> */}
 
             {/* <Icon
             title="facebook"
             ></Icon> */}
 
-            <Benefit data={contentHandler(homeContentData, "Benefit", 1)} />
+            <div className="header-space"></div>
+
+            {/* <Benefit data={contentHandler(homeContentData, "Benefit", 1)} /> */}
 
             <ImageContent data={contentHandler(homeContentData, "ImageContent", 1)} />
 
-            <Banner data={contentHandler(homeContentData, "Banner", 1)} />
+            {/* <Banner data={contentHandler(homeContentData, "Banner", 1)} />
 
             <Reference data={contentHandler(homeContentData, "Reference", 1)} />
 
@@ -31,7 +33,7 @@ const Home = () => {
 
             <ImageContent data={contentHandler(homeContentData, "ImageContent", 2)} />
 
-            <Crosslink data={contentHandler(homeContentData, "Crosslink", 1)} />
+            <Crosslink data={contentHandler(homeContentData, "Crosslink", 1)} /> */}
             
         </>
 
