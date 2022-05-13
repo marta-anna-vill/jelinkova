@@ -1,53 +1,155 @@
 .image-content {
     position: relative;
     padding: 10rem 0;
+    margin: 0 0 31rem 0;
+
+    @include media(xs) {
+        margin: 0 0 28rem 0;
+    }
+
+    @include media(md) {
+        margin: 0;
+    }
+
     .image-content-inner {
-        min-height: 70rem;
+        max-height: 60rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        @include media(md) {
+            min-height: 70rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
         .image-content-photo {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
-            margin: 0 100px 0 0;
+            justify-content: center;
+            margin: 0 30px 0 7rem;
+
             img {
                 position: relative;
                 z-index: 3;
-                width: 41rem;
-                max-height: 51rem;
-                min-height: 51rem;
+                width: 33rem;
+                max-height: 42rem;
+                min-height: 42rem;
                 object-fit: cover;
             }
-        }        
-        .image-content-text {
-            align-items: left;
-            padding: 10rem 5rem;
-            font-size: 24px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            max-width: 75rem;
-            position: relative;
-            color: black;
-            .image-content-text-title {
-                h2 {
-                    position: relative;
-                    &::after {
+
+            @include media(lg) {
+                display: flex;
+                justify-content: flex-end;
+                margin: 0 100px 0 0;
+
+                img {
+                    width: 41rem;
+                    max-height: 51rem;
+                    min-height: 51rem;
+                }
+            }
+
+            .image-shapes-wrapper {
+                position: relative;
+                display: flex;
+                width: max-content;
+                height: max-content;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50px;
+                    left: 45px;
+                    height: calc(100% + 1rem);
+                    width: calc(100% + 1rem);
+                    background-color: $main-color;
+                    opacity: 0.5;
+                    z-index: 1;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -30px;
+                    right: 30px;
+                    height: calc(100% + 60px);
+                    width: 100%;
+                    border: 5px solid $main-color;
+                    background-color: transparent;
+                    z-index: 2;
+                }
+
+                @include media(lg) {
+                    &::before {
                         content: '';
                         position: absolute;
-                        top: calc(100% + 30px);
-                        left: 0;    
-                        background-color: black;
-                        width: 55px;
-                        height: 3px;
+                        top: 60px;
+                        left: 50px;
+                        height: calc(100% + 3rem);
+                        width: calc(100% + 5rem);
+                        background-color: $main-color;
+                        opacity: 0.5;
+                        z-index: 1;
                     }
                 }
-            } 
+            }
+        }
+
+        .image-content-text {
+            padding: 10rem 1rem;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            //max-width: 75rem;
+            position: relative;
+            color: black;
+
+            @include media(lg) {
+                align-items: left;
+                max-width: 75rem;
+                font-size: 24px;
+            }
+
+            @include media(md) {
+                display: flex;
+                align-items: flex-start;
+                margin: 0 0 0 5rem;
+            }
+
+            .image-content-text-title {
+                position: relative;
+
+                h2 {
+                    font-size: 30px;
+                }                
+
+                @include media(md) {
+                    h2 {
+                        position: relative;
+                        font-size: 40px;
+    
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: calc(100% + 30px);
+                            left: 0;
+                            background-color: black;
+                            width: 55px;
+                            height: 3px;
+                        }
+                    }
+                }
+            }
+
             .image-content-link {
                 margin: 3.5rem 0 0 0;
+
                 a {
                     color: $main-color;
                     text-decoration: none;
+
                     &::hover {
                         color: #fdb393;
                         text-decoration: none;
@@ -55,35 +157,5 @@
                 }
             }
         }
-    }
-}
-
-
-.image-shapes-wrapper {
-    position: relative;
-    display: flex;
-    width: max-content;
-    height: max-content;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 60px;
-        left: 50px;
-        height: calc(100% + 3rem);
-        width: calc(100% + 5rem);
-        background-color: $main-color;
-        opacity: 0.5;
-        z-index: 1;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        top: -30px;
-        right: 30px;
-        height: calc(100% + 60px);
-        width: 100%;
-        border: 5px solid $main-color;
-        background-color: transparent;
-        z-index: 2;
     }
 }

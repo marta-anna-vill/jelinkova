@@ -1,4 +1,5 @@
 export const BlackContent = (props) => {
+    props = props.data
     return (
         <div className="section section-rose-img">
             <div className="black-content">
@@ -13,13 +14,7 @@ export const BlackContent = (props) => {
                                     <h2>{props.title}</h2>
                                 </div>
                                 <div className="black-content-text-detail">
-                                    Our highly qualified therapists will discuss your specific concerns and
-                                    individualise
-                                    your
-                                    massage to meet your requirements, be it back, neck and shoulder, full body
-                                    Swedish
-                                    massage
-                                    or head and neck.
+                                    {props.perex}
                                 </div>
                             </div>
                         </div>

@@ -5,56 +5,69 @@ header {
     width: 100%;
     z-index: 1050;
     background: white;
+
+    .header {
+        justify-content: space-between;
+        display: flex;
+
+        .header-logo {
+            padding: 1.5rem 0;
+
+            a {
+                display: flex;
+                height: max-content;
+
+                img {
+                    max-height: 8rem;
+                }
+            }
+        }
+
+        .header-menu {
+            display: flex;
+            z-index: 5;
+            margin-left: auto;
+
+            ul {
+                display: flex;
+                margin: 0 10rem;
+                list-style-type: none;
+                align-items: center;
+            }
+
+            li {
+                display: inline;
+                margin: 0 1.8rem;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    padding: 1rem;
+                    text-align: center;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .header-cta {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
 }
 
-.header {
-    justify-content: space-between;
-    display: flex;
-}
+// .header-logo a img {
+//     max-height: 8rem;
+// }
 
-.header-logo {
-    padding: 1.5rem 0;
-}
-
-.header-logo a {
-    display: flex;
-    height: max-content;
-}
-
-.header-logo a img {
-    max-height: 8rem;
-}
-
-.header-cta {
-    display: flex;
-    align-items: center;
-}
-
-.header-menu {
-    display: flex;
-    z-index: 5;
-    margin-left: auto;
-}
-
-.header-menu ul {
-    display: flex;
-    margin: 0 10rem;
-    list-style-type: none;
-    align-items: center;
-}
-
-.header-menu li {
-    display: inline;
-    margin: 0 1.8rem;
-}
-
-.header-menu li a {
-    color: black;
-    text-decoration: none;
-    padding: 1rem;
-    text-align: center;
-    font-size: 20px;
-}
+// .header-menu li a {
+//     color: black;
+//     text-decoration: none;
+//     padding: 1rem;
+//     text-align: center;
+//     font-size: 20px;
+// }
 
 .header-menu li a:hover {
     background-color: #fbd2c0;

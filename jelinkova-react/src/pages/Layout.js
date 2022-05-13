@@ -1,15 +1,19 @@
 import { Outlet, Link } from "react-router-dom";
-import logo from '../images/massage-logo-2.jpg';
+import logoHeader from '../images/jelinkova_logo.png';
+import iconFacebook from '../images/icons8-facebook.svg';
+import iconInstagram from '../images/icons8-instagram.svg';
+import imageFooter from '../images/footer-photo.jpg';
+
 
 const Layout = () => {
     return (
         <>
-            <header>
+            {/* <header>
                 <div className="base-container">
                     <div className="header">
                         <div className="header-logo">
                             <a href="/">
-                                <img src={logo} alt="Logo-massages" />
+                                <img src={logoHeader} alt="Logo-massages" />
                             </a>
                         </div>
                         <nav className="header-menu">
@@ -21,6 +25,9 @@ const Layout = () => {
                                 <li>
                                     <Link to="/about">Cosmetics & Beauty</Link>
                                 </li>
+                                <li>
+                                    <Link to="/massages">Massages</Link>
+                                </li>
                             </ul>
                         </nav>
                         <div className="header-cta">
@@ -28,15 +35,67 @@ const Layout = () => {
                         </div>
                     </div>
                 </div>
-            </header>
+            </header> */}
 
             <div className="header-space"></div>
 
             <Outlet />
 
-            <footer>
-                
-            </footer>
+            {/* <footer>
+                <div className="footer-top">
+                    <div className="base-container">
+                        <div className="footer-top-inner">
+                            <div className="footer-top-content">
+                                <h2>Where to find us</h2>
+                                Praha
+                                <h2>Follow us</h2>
+                                <div className="social-container">
+                                    <a className="social-item"
+                                        href="https://nicepage.com/templates/preview/exceptional-beauty-service-1292320?device=desktop"
+                                        target="_blank" rel="noreferrer">
+                                        <img src={iconFacebook} alt=""/>
+                                    
+                                    </a>
+                                    <a className="social-item"
+                                        href="https://nicepage.com/templates/preview/exceptional-beauty-service-1292320?device=desktop"
+                                        target="_blank"  rel="noreferrer">
+                                        <img src={iconInstagram} alt=""/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="footer-top-image">
+                                <img src={imageFooter} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="footer-middle">
+                    <div className="base-container">
+                        <div className="footer-middle-inner">
+                            <div className="footer-middle-col">
+                                <h3>Nadpis</h3>
+                                <Link to="/">Home</Link>
+                            </div>
+                            <div className="footer-middle-col">
+                                <h3>Nadpis</h3>
+                                <Link to="./gallery.html">Gallery</Link>
+                            </div>
+                            <div className="footer-middle-col">
+                                <h3>Nadpis</h3>
+                                <Link to="./pricing.html">Pricing</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="footer-copy">
+                    <div className="base-container">
+                        <div className="footer-copy-inner">
+                            © created by Marta | 2022
+                        </div>
+                    </div>
+                </div>
+
+            </footer> */}
         </>
     )
 };

@@ -1,6 +1,5 @@
 export const Benefit = (props) => {
-    console.log(props)
-    return (
+        return (
         <div className="medium-container">
             <div className="benefit-container">
                 
@@ -15,10 +14,11 @@ export const Benefit = (props) => {
                                     {item.perex}
                                 </div>
                             </div>
+                            
                             <div className="benefit-item-photo">
                                 <img src={item.image} alt=""/>
                             </div>
-                        </div>
+                        </div> 
                     )
                 })}
 
