@@ -1,6 +1,7 @@
 .banner {
     background-color: #e3e3eb;
     position: relative;
+
     &::after {
         content: '';
         position: absolute;
@@ -10,14 +11,13 @@
         height: 100%;
         background: rgba(0, 0, 0, 0);
         z-index: 2;
+
         .banner-inner {
             display: flex;
             min-height: 52rem;
         }
     }
 }
-
-
 
 .banner-background-image {
     position: absolute;
@@ -40,22 +40,24 @@
     position: relative;
     color: black;
     z-index: 3;
-}
 
-.banner-content h2 {
-    margin: 0 0 3.5rem 0;
-    position: relative;
-    color: black;
-}
+    h2 {
+        margin: 0 0 3.5rem 0;
+        position: relative;
+        color: black;
 
-.banner-content h2::after {
-    content: "";
-    position: absolute;
-    top: calc(100% + 20px);
-    left: 0;
-    width: 55px;
-    height: 3px;
-    background: black;
+        @include media(md) {
+            &::after {
+                content: "";
+                position: absolute;
+                top: calc(100% + 20px);
+                left: 0;
+                width: 55px;
+                height: 3px;
+                background: black;
+            }
+        }
+    }
 }
 
 .banner-content .marker {

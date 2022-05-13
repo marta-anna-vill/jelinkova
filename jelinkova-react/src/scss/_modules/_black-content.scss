@@ -1,15 +1,23 @@
 .black-content {
     position: relative;
     padding: 10rem 0;
+
     .black-content-inner {
-        min-height: 60rem;
         position: relative;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        margin: auto 10rem;
+
+        @include media(md) {
+            min-height: 60rem;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
         .black-content-photo {
             display: flex;
             align-items: center;
             justify-content: flex-end;
+
             img {
                 max-height: 100%;
                 min-height: 100%;
@@ -17,12 +25,18 @@
                 object-fit: cover;
             }
         }
+
         .black-content-text {
-            font-size: 17px;
+            font-size: 13px;
             position: relative;
             color: black;
-            background-color: #fbd2c0;
+            background-color: $main-color;
             padding: 4rem;
+
+            @include media(xs) {
+                font-size: 17px;
+            }
+
             .black-content-text-inner {
                 display: flex;
                 flex-direction: column;
@@ -30,23 +44,34 @@
                 height: 100%;
                 padding: 3rem;
                 border: 2px solid black;
+
                 .black-content-text-title h2 {
                     position: relative;
                     margin: 0 0 6rem 0;
+                    font-size: 25px;
+
                     &::after {
                         content: '';
                         position: absolute;
-                        top: calc(100% + 30px);
-                        left: 0;    
+                        top: calc(100% + 10px);
+                        left: 0;
                         background-color: black;
                         width: 55px;
                         height: 3px;
+                    }
+
+                    @include media(xs) {
+                        font-size: 40px;
+                    }
+
+                    @include media(md) {
+                        font-size: 50px;
+                        &::after {
+                            top: calc(100% + 30px);
+                        }  
                     }
                 }
             }
         }
     }
 }
-
-
-
