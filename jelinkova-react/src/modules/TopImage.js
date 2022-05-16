@@ -1,14 +1,22 @@
+import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Parallax } from "../components/Paralax";
 
 export const TopImage = (props) => {
     props = props.data
  
+    const topImageRef = useRef(null);
+
+    useEffect(() => {
+        Parallax(topImageRef.current, "img");
+    });
+
     return (
         <div className="top-image">
             <div className="base-container">
                 <div className="top-image-inner">
                     <div className="top-image-photo">
-                        <img src={props.image} alt="" />
+                        <img rel={topImageRef} src={props.image} alt="" />
                     </div>
                     <div className="top-image-content">
                         <span className="marker">{props.marker}</span>

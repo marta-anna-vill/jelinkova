@@ -1,7 +1,17 @@
+import { useRef, useEffect } from "react"
+import { Parallax } from "../components/Paralax";
+
 export const BlackContent = (props) => {
     props = props.data
+
+    const blackContentRef = useRef(null);
+
+    useEffect(() => {
+        Parallax(blackContentRef.current, "div");
+    });
+
     return (
-        <div className="section section-rose-img">
+        <div ref={blackContentRef} className="section section-rose-img">
             <div className="black-content">
                 <div className="medium-container">
                     <div className="black-content-inner">

@@ -1,8 +1,18 @@
+import { useRef, useEffect, useState } from "react";
+import { Parallax } from "../components/Paralax";
+
 export const Banner = (props) => {
-    props = props.data
+    props = props.data;
+
+    const bannerRef = useRef(null);
+
+    useEffect(() => {
+        Parallax(bannerRef.current, "img");
+    });
+
     return (
         <div className="banner background-soft-gradient">
-            <img className="banner-background-image" src={props.image} alt="" />
+            <img ref={bannerRef} className="banner-background-image parallax-image" src={props.image} alt="" />
             <div className="base-container">
                 <div className="banner-inner">
                     <div className="banner-content">
