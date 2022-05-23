@@ -45,6 +45,7 @@
                     width: 41rem;
                     max-height: 51rem;
                     min-height: 51rem;
+                    border-radius: 8px;
                 }
             }
 
@@ -63,7 +64,19 @@
                     width: calc(100% + 1rem);
                     background-color: $main-color;
                     opacity: 0.5;
+                    border-radius: 8px;
                     z-index: 1;
+                    @include media(lg) {
+                        content: '';
+                        position: absolute;
+                        top: 60px;
+                        left: 50px;
+                        height: calc(100% + 3rem);
+                        width: calc(100% + 5rem);
+                        background-color: $main-color;
+                        opacity: 0.5;
+                        z-index: 1;
+                    }
                 }
 
                 &::after {
@@ -77,25 +90,10 @@
                     background-color: transparent;
                     z-index: 2;
                 }
-
-                @include media(lg) {
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 60px;
-                        left: 50px;
-                        height: calc(100% + 3rem);
-                        width: calc(100% + 5rem);
-                        background-color: $main-color;
-                        opacity: 0.5;
-                        z-index: 1;
-                    }
-                }
             }
         }
 
         .image-content-text {
-            font-size: 20px;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -109,7 +107,6 @@
             @include media(lg) {
                 align-items: left;
                 max-width: 75rem;
-                font-size: 24px;
             }
 
             @include media(md) {
@@ -121,11 +118,7 @@
 
             .image-content-text-title {
                 position: relative;
-
-                h2 {
-                   // font-size: 30px;
-                    margin: 0 0 3rem 0;
-                }                
+                margin: 0 0 3rem 0;
             }
 
             .image-content-link {

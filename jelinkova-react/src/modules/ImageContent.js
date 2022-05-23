@@ -11,8 +11,8 @@ export const ImageContent = (props) => {
                         </div>
                     </div>
                     <div className="image-content-text">
-                        <div className="image-content-text-title">
-                            <h2>{props.title}</h2>
+                        <div className="image-content-text-title h2">
+                            {props.title}
                         </div>
                         <div className="image-content-text-detail">
                             {props.perex}

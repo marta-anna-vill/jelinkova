@@ -8,7 +8,7 @@ export const Crosslink = (props) => {
                         return (
                             <div key={index} className={'crosslink-item ' + (item.reverse ? 'reverse-item' : '')}>
                                 <div className={'crosslink-item-content ' + item.class}>
-                                    <div className="crosslink-item-content-title">
+                                    <div className="crosslink-item-content-title h3">
                                         {item.title}
                                     </div>
                                     <div className="crosslink-item-content-text">

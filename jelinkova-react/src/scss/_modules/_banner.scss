@@ -34,31 +34,15 @@
 
 .banner-content {
     padding: 10rem 5rem;
-    font-size: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 75rem;
     position: relative;
-    color: black;
     z-index: 3;
 
     h2 {
         margin: 0 0 3.5rem 0;
-        position: relative;
-        color: black;
-
-        @include media(md) {
-            &::after {
-                content: "";
-                position: absolute;
-                top: calc(100% + 20px);
-                left: 0;
-                width: 55px;
-                height: 3px;
-                background: black;
-            }
-        }
     }
 }
 

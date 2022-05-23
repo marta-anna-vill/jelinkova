@@ -4,7 +4,8 @@ h1, .h1 {
     margin: 8rem 0 6rem 0;
     line-height: 78px;
     color: $base-text;
-
+    font-family: $font-family-title;
+    letter-spacing: 1px;
     @include media(md) {
         font-size: 70px;
         font-weight: 700;
@@ -20,6 +21,8 @@ h2, .h2 {
     margin: 6rem 0 6rem 0;
     line-height: 52px;
     color: $main-color-dark;
+    font-family: $font-family-title;
+    letter-spacing: 1px;
 }
 
 h3, .h3 {
@@ -28,6 +31,8 @@ h3, .h3 {
     margin: 6rem 0;
     line-height: 48px;
     color: $base-text;
+    font-family: $font-family-title;
+    letter-spacing: 1px;
 }
 
 h4, .h4 {
@@ -36,13 +41,19 @@ h4, .h4 {
     margin: 4rem 0;
     line-height: 40px;
     color: $base-text;
+    font-family: $font-family-title;
 }
 
 
 .marker {
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 17px;
     display: block;
 }
 
+.perex {
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 1px;
+}

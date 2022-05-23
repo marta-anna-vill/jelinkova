@@ -88,13 +88,13 @@ header {
                     text-decoration: none;
                     background-color: $base-white;
                     padding: 1rem;
-                    font-weight: 300;
+                    font-weight: 400;
                     text-align: center;
-                    font-size: 22px;
+                    font-size: 20px;
                     letter-spacing: 1px;
                     transition: 300ms ease;
                     &:hover, &:focus {
-                        color: $main-color;
+                        color: $main-color-dark;
                     }
                 }
             }
@@ -132,6 +132,11 @@ header {
                 width: 40px;
                 top: 0;
             }
+        }
+    }
+
+    &.scrolled {
+        .header-logo {
         }
     }
 

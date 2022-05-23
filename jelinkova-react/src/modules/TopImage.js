@@ -18,10 +18,11 @@ export const TopImage = (props) => {
                     <div className="top-image-content">
                         <div className="top-image-content-inner">
                         <span className="marker">{props.marker}</span>
-                        
                         <h1>{props.title}</h1>
 
-                        {props.perex}
+                        <div className="perex">
+                            {props.perex}
+                        </div>
 
                         {props.ctaUrl && (
                             <div className="top-image-cta">

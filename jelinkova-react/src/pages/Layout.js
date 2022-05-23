@@ -3,20 +3,31 @@ import logoHeader from '../images/logo.png';
 import iconFacebook from '../images/icons8-facebook.svg';
 import iconInstagram from '../images/icons8-instagram.svg';
 import imageFooter from '../images/footer-photo.jpg';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const Layout = () => {
 
     const [open, toggle] = useState(false);
+    const [scroll, changeScroll] = useState(0);
 
     const handleToggle = () => {
         toggle(!open);
-    }
+    };
+
+    const handleScroll = () => {
+        changeScroll(window.pageYOffset);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", function() {
+            handleScroll();
+        });
+    });
 
     return (
         <>
-            <header className={open ? "open" : ""}>
+            <header className={open ? "open" : "", scroll > 0 ? "scrolled" : ""}>
                 <div className="header-container">
                     <div className="header">
                         <div className="header-logo">

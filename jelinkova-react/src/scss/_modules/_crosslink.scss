@@ -48,7 +48,6 @@
         padding: 5rem 8rem 5rem 4rem;
 
         .crosslink-item-content-text {
-            font-size: 20px;
             line-height: 3.2rem;
         }
 
@@ -56,7 +55,7 @@
             font-size: 26px;
             font-weight: 700;
             position: relative;
-            margin-bottom: 3rem;
+            margin: 0 0 2rem 0;
 
             // &::after {
             //     content: "";
