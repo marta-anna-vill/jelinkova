@@ -15,10 +15,8 @@ export const TopImage = (props) => {
         <div className="top-image">
             <div className="base-container">
                 <div className="top-image-inner">
-                    <div className="top-image-photo">
-                        <img rel={topImageRef} src={props.image} alt="" />
-                    </div>
                     <div className="top-image-content">
+                        <div className="top-image-content-inner">
                         <span className="marker">{props.marker}</span>
                         
                         <h1>{props.title}</h1>
@@ -30,7 +28,10 @@ export const TopImage = (props) => {
                                 <Link className="btn btn-primary" to={props.ctaUrl} rel="noopener">{props.ctaName}</Link>
                             </div>
                         )}
-
+                        </div>
+                    </div>
+                    <div className="top-image-photo">
+                        <img rel={topImageRef} src={props.image} alt="" />
                     </div>
                 </div>
             </div>

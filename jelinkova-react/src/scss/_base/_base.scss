@@ -12,7 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f2b39a;
+    background: #bb81bb;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -28,9 +28,9 @@ html {
 }
 
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Signika', sans-serif;
-
+    color: $base-text;
     @include media(md) {
         font-size: 18px;
     }
@@ -93,4 +93,17 @@ img {
 
 .margin-bottom {
     margin-bottom: 5rem;
+}
+
+.image-overlay {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $base-black;
+        opacity: 0.4;
+    }
 }

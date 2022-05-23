@@ -14,6 +14,9 @@ export const Crosslink = (props) => {
                                     <div className="crosslink-item-content-text">
                                         {item.perex}
                                     </div>
+                                    <div className="crosslink-item-content-cta">
+                                    <a className="btn btn-primary" href="/">Více</a>
+                                    </div>
                                 </div>
                                 <div className="crosslink-item-photo">
                                     <img src={item.image} alt="" />

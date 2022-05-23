@@ -1,7 +1,7 @@
 .image-content {
     position: relative;
     padding: 10rem 0;
-    margin: 0 0 31rem 0;
+    margin: 0;
 
     @include media(xs) {
         margin: 0 0 28rem 0;
@@ -12,12 +12,11 @@
     }
 
     .image-content-inner {
-        max-height: 60rem;
         display: grid;
         grid-template-columns: 1fr;
+        padding: 3rem 0 9rem 0;
 
         @include media(md) {
-            min-height: 70rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
@@ -96,7 +95,6 @@
         }
 
         .image-content-text {
-            padding: 10rem 1rem;
             font-size: 20px;
             display: flex;
             align-items: center;
@@ -105,6 +103,8 @@
             //max-width: 75rem;
             position: relative;
             color: black;
+            text-align: center;
+            font-weight: 300;
 
             @include media(lg) {
                 align-items: left;
@@ -116,31 +116,16 @@
                 display: flex;
                 align-items: flex-start;
                 margin: 0 0 0 5rem;
+                text-align: left;
             }
 
             .image-content-text-title {
                 position: relative;
 
                 h2 {
-                    font-size: 30px;
+                   // font-size: 30px;
+                    margin: 0 0 3rem 0;
                 }                
-
-                @include media(md) {
-                    h2 {
-                        position: relative;
-                        font-size: 40px;
-    
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            top: calc(100% + 30px);
-                            left: 0;
-                            background-color: black;
-                            width: 55px;
-                            height: 3px;
-                        }
-                    }
-                }
             }
 
             .image-content-link {

@@ -1,15 +1,23 @@
 import { Outlet, Link } from "react-router-dom";
-import logoHeader from '../images/jelinkova_logo.png';
+import logoHeader from '../images/logo.png';
 import iconFacebook from '../images/icons8-facebook.svg';
 import iconInstagram from '../images/icons8-instagram.svg';
 import imageFooter from '../images/footer-photo.jpg';
+import { useState } from "react";
 
 
 const Layout = () => {
+
+    const [open, toggle] = useState(false);
+
+    const handleToggle = () => {
+        toggle(!open);
+    }
+
     return (
         <>
-            {/* <header>
-                <div className="base-container">
+            <header className={open ? "open" : ""}>
+                <div className="header-container">
                     <div className="header">
                         <div className="header-logo">
                             <a href="/">
@@ -20,22 +28,27 @@ const Layout = () => {
                             <ul>
 
                                 <li>
-                                    <Link to="/">Home</Link>
+                                    <Link to="/">Domů</Link>
                                 </li>
                                 <li>
-                                    <Link to="/about">Cosmetics & Beauty</Link>
+                                    <Link to="/about">O mně</Link>
                                 </li>
                                 <li>
-                                    <Link to="/massages">Massages</Link>
+                                    <Link to="/massages">Masáže</Link>
                                 </li>
                             </ul>
                         </nav>
                         <div className="header-cta">
-                            <Link className="btn btn-primary" to="/about">Contact us</Link>
+                            <Link className="btn btn-primary" to="/about">Kontakt</Link>
+                        </div>
+                        <div className="hamburger-menu">
+                            <a className="open-menu" onClick={handleToggle}>
+                                <span></span>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </header> */}
+            </header>
 
             <div className="header-space"></div>
 

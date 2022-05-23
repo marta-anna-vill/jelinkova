@@ -8,13 +8,15 @@ const Massages = () => {
     return (
         <>
 
-            <div className="base-container">
+            {/* <div className="base-container">
                 <h1>Massages</h1>
-            </div>
+            </div> */}
 
-            <TopImage data={contentHandler(homeContentData, "TopImage", 1)} />
+            <TopImage data={contentHandler(homeContentData, "TopImage", 2)} />
 
             <ContentImage data={contentHandler(massageContentData, "ContentImage", 1)} />
+
+            <ContentImage data={contentHandler(massageContentData, "ContentImage", 2)} />
 
         </>
     )

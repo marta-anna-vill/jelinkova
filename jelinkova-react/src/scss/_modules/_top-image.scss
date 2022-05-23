@@ -1,7 +1,7 @@
 .top-image {
     background: linear-gradient(90deg, rgba(227, 227, 235, 1) 50%, rgba(255, 255, 255, 1) 100%);
     position: relative;
-    color: black;
+    color: $base-black;
 
     .top-image-inner {
         min-height: 72rem;
@@ -14,8 +14,8 @@
         @include media(lg) {
             margin: 0;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            min-height: 72rem;
+            grid-template-columns: 2fr 1fr;
+            min-height: 85rem;
         }
 
         .top-image-photo {
@@ -23,74 +23,58 @@
             margin-left: -20px;
 
             img {
-                max-height: 50rem;
-                min-height: 50rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-height: 100%;
+                min-height: 100%;
                 width: 100%;
                 object-fit: cover;
+                transform: rotate(180deg);
                 z-index: 1;
             }
-
-            @include media(xs) {
-                width: calc(100% + 40px);
-                margin-left: -20px;
-
-                img {
-                    max-height: 100%;
-                    min-height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                    z-index: 1;
-                }
-            }
-
-            @include media(md) {
-                width: calc(100% + 40px);
-                margin-left: -20px;
-                max-height: 15rem;
-
-                img {
-                    max-height: 80rem;
-                    min-height: 80rem;
-                    width: 100%;
-                    object-fit: cover;
-                    z-index: 1;
-                }
-            }
-
-            @include media(lg) {
-                img {
-                    margin: 0;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    max-height: 100%;
-                    min-height: 100%;
-                    width: 50%;
-                    object-fit: cover;
-                    z-index: 1;
-                }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, rgba(250,235,215,0.9) 0%, rgba(255,255,255,0) 90%);
+                background: linear-gradient(40deg, rgba(250,235,215,1) 12%, rgba(255,255,255,0) 85%);
+                background: linear-gradient(27deg, rgba(250,235,215,1) 0%, rgba(250,235,215,0.8326681014202556) 30%, rgba(255,255,255,0) 85%);
+                background: linear-gradient(8deg, rgba(250,235,215,1) 0%, rgba(250,235,215,0.8326681014202556) 30%, rgba(255,255,255,0) 85%);
+                background: linear-gradient(21deg, rgba(211,176,207,1) 0%, rgba(211,176,207,0.8130602582830007) 30%, rgba(255,255,255,0) 100%);
+                z-index: 2;
             }
         }
 
         .top-image-content {
-            padding: 10rem 3rem 14rem 3rem;
+            position: relative;
+            z-index: 3;
+            padding: 10rem 0;
             font-size: 19px;
+            display: flex;
+            align-items: center;
 
             @include media(lg) {
-                padding: 10rem 3rem 14rem 3rem;
+                padding: 10rem 0 10rem 8rem;
                 font-size: 24px;
             }
 
-            & h1 {
-                margin: 0 0 3.5rem 0;
-            }
-
-            .top-image-cta {
-                margin: 3.5rem 0 0 0;
-            }
-
-            & .marker {
-                margin: 0 0 3.5rem 0;
+            .top-image-content-inner {
+                margin-bottom: 5rem;
+                & h1 {
+                    margin: 6rem 0;
+                }
+    
+                .top-image-cta {
+                    margin: 3.5rem 0 0 0;
+                }
+    
+                & .marker {
+                    letter-spacing: 2px;
+                }
             }
         }
     }
@@ -106,10 +90,10 @@
     // }
 
     @include media (md) {
-        color: white;
+        color: $base-white;
     }
 
     @include media(lg) {
-        color: black;
+        color: $base-black;
     }
 }

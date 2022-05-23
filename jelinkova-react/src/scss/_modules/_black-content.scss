@@ -1,10 +1,14 @@
 .black-content {
     position: relative;
-    padding: 10rem 0;
+    padding: 6rem 0;
+
+    @include media(md) {
+        padding: 10rem 0;
+    }
 
     .black-content-inner {
         position: relative;
-        margin: auto 10rem;
+        margin: auto 0;
 
         @include media(md) {
             min-height: 60rem;
@@ -17,17 +21,29 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            position: relative;
+            
+           // @include media(sm) {
+                min-height: 40rem;
+                max-height: 40rem;
+         //   }
+
+            @include media(md) {
+                max-height: 100%;
+                min-height: 100%;
+            }
 
             img {
                 max-height: 100%;
                 min-height: 100%;
                 width: 100%;
                 object-fit: cover;
+                position: absolute;
             }
         }
 
         .black-content-text {
-            font-size: 13px;
+            font-size: 15px;
             position: relative;
             color: black;
             background-color: $main-color;
@@ -66,9 +82,10 @@
 
                     @include media(md) {
                         font-size: 50px;
+
                         &::after {
                             top: calc(100% + 30px);
-                        }  
+                        }
                     }
                 }
             }

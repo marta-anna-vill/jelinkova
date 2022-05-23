@@ -15,25 +15,21 @@ const Home = () => {
         <>
             <TopImage data={contentHandler(homeContentData, "TopImage", 1)} />
 
-            {/* <Icon
-            title="facebook"
-            ></Icon> */}
+            <Crosslink data={contentHandler(homeContentData, "Crosslink", 1)} />
 
-            {/* <div className="header-space"></div> */}
-
-            <Benefit data={contentHandler(homeContentData, "Benefit", 1)} />
+            {/* <Benefit data={contentHandler(homeContentData, "Benefit", 1)} /> */}
 
             <ImageContent data={contentHandler(homeContentData, "ImageContent", 1)} />
 
             <Banner data={contentHandler(homeContentData, "Banner", 1)} />
 
-            <Reference data={contentHandler(homeContentData, "Reference", 1)} />
-
-            <BlackContent data={contentHandler(homeContentData, "BlackContent", 1)} />
-
             <ImageContent data={contentHandler(homeContentData, "ImageContent", 2)} />
 
-            {/* <Crosslink data={contentHandler(homeContentData, "Crosslink", 1)} /> */}
+            <Reference data={contentHandler(homeContentData, "Reference", 1)} />
+
+            {/* <BlackContent data={contentHandler(homeContentData, "BlackContent", 1)} /> */}
+
+          
             
         </>
 

@@ -1,34 +1,32 @@
 .btn {
-    padding: 1rem 3.5rem;
-    text-transform: uppercase;
-    font-size: 19px;
+    padding: 1.2rem 3rem;
+    //text-transform: uppercase;
+    font-size: 20px;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 500;
+    min-width: 15rem;
     display: inline-flex;
+    justify-content: center;
+    border-radius: 5px;
     border: 2px solid transparent;
     transition: 300ms ease;
 }
 
 .btn-primary {
-    background-color: #f2b39a;
-    color: black;
-    border-color: #f2b39a;
+    background-color: $main-color-dark;
+    color: $base-white;
+    border-color: $main-color-dark;
 }
 
-.btn-primary:hover {
-    background-color: #df9374;
-    color: black;
-    border-color: #df9374;
-}
 
 .btn-default {
-    background-color: black;
-    color: white;
-    border-color: black;
+    background-color: transparent;
+    color: $main-color-dark;
+    border-color: $main-color-dark;
 }
 
 .btn-default:hover {
     background-color: transparent;
-    color: black;
-    border-color: black;
+    color: $base-black;
+    border-color: $base-black;
 }
