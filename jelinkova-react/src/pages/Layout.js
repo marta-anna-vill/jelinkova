@@ -1,9 +1,10 @@
 import { Outlet, Link } from "react-router-dom";
-import logoHeader from '../images/logo.png';
+//import logoHeader from '../images/logo.png';
 import iconFacebook from '../images/icons8-facebook.svg';
 import iconInstagram from '../images/icons8-instagram.svg';
 import imageFooter from '../images/footer-photo.jpg';
 import { useState } from "react";
+import logoHeader from '../images/logo-jelinkova-svg.svg';
 
 
 const Layout = () => {
