@@ -36,7 +36,7 @@ header {
         }
 
         .header-logo {
-            padding: 1.5rem 1rem;
+            padding: .5rem 1rem;
             background-color: $base-white;
             position: relative;
             z-index: 1;
@@ -46,8 +46,8 @@ header {
                 height: max-content;
 
                 img {
-                    max-height: 6.5rem;
-                    min-height: 6.5rem;
+                    max-height:8rem;
+                    min-height: 8rem;
                 }
             }
         }
