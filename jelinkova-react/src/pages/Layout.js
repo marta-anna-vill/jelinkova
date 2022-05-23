@@ -4,7 +4,6 @@ import iconFacebook from '../images/icons8-facebook.svg';
 import iconInstagram from '../images/icons8-instagram.svg';
 import imageFooter from '../images/footer-photo.jpg';
 import { useEffect, useState } from "react";
-import { useState } from "react";
 import logoHeader from '../images/logo-jelinkova-svg.svg';
 
 
