@@ -82,22 +82,4 @@
             }
         }
     }
-
-
-    // barvičky - později smazat
-    // @include media(xs) {
-    //     color: red;
-    // }
-
-    // @include media(sm) {
-    //     color: pink;
-    // }
-
-    @include media (md) {
-        color: $base-white;
-    }
-
-    @include media(lg) {
-        color: $base-black;
-    }
 }

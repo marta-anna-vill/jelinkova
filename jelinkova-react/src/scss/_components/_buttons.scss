@@ -17,6 +17,10 @@
     background-color: $main-color-dark;
     color: $base-white;
     border-color: $main-color-dark;
+    &:hover, &:focus {
+        background-color: $main-color-hover;
+        border-color: $main-color-hover;
+    }
 }
 
 
@@ -24,10 +28,8 @@
     background-color: transparent;
     color: $main-color-dark;
     border-color: $main-color-dark;
-}
-
-.btn-default:hover {
-    background-color: transparent;
-    color: $base-black;
-    border-color: $base-black;
+    &:hover, &:focus {
+        color: $main-color-hover;
+        border-color: $main-color-hover;
+    }
 }

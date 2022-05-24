@@ -18,7 +18,7 @@ export const ImageContent = (props) => {
                             {props.perex}
                         </div>
                         <div className="image-content-link">
-                            <a href={props.ctaUrl} rel="noreferrer" target="_blank">Learn
+                            <a className="btn btn-primary" href={props.ctaUrl} rel="noreferrer" target="_blank">Learn
                                 more</a>
                         </div>
                     </div>
