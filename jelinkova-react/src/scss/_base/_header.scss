@@ -153,6 +153,9 @@ header {
                                 display: block;
                             }
                         }
+                        .submenu-open {
+                            transform: translateX(-50%) translateY(calc(-50% - 18px));
+                        }
                     }
                 }
             }
@@ -173,14 +176,15 @@ header {
 
         .submenu-open {
             position: absolute;
-            top: calc(100% - 20px - 18px);
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-50%) translateY(calc(-50% + 18px));
             height: 20px;
             width: 20px;
             border-radius: 50%;
             border: 2px solid $color-line;
             z-index: 0;
+            transition: 200ms ease;
         }
     }
 
