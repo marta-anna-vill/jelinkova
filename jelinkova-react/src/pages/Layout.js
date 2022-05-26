@@ -47,6 +47,7 @@ const Layout = () => {
                                 </li>
                                 <li>
                                     <Link to="/massages">Masáže</Link>
+                                    <span className="submenu-open"></span>
                                     <ul>
                                         <li>
                                             <Link to="/massages/masaz-1" >Masáž 1</Link>

@@ -81,6 +81,7 @@ header {
                     display: flex;
                     height: 100%;
                     margin: 0 3rem;
+                    align-items: center;
                     position: relative;
 
                     >a {
@@ -89,15 +90,16 @@ header {
                         color: $base-black;
                         text-decoration: none;
                         background-color: $base-white;
-                        padding: 1rem;
+                        padding: 4px 1rem;
                         font-weight: 400;
                         text-align: center;
                         font-size: 20px;
                         letter-spacing: 1px;
                         transition: 300ms ease;
-
-                        &:hover,
-                        &:focus {
+                        position: relative;
+                        z-index: 1;
+                        
+                        &:hover, &:focus {
                             color: $main-color-dark;
                         }
                     }
@@ -167,6 +169,18 @@ header {
             @include media($menu-break) {
                 display: flex;
             }
+        }
+
+        .submenu-open {
+            position: absolute;
+            top: calc(100% - 20px - 18px);
+            left: 50%;
+            transform: translateX(-50%);
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            border: 2px solid $color-line;
+            z-index: 0;
         }
     }
 
