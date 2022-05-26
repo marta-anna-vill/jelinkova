@@ -15,8 +15,10 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="massages/index" element={<MassagesIndex />} />
-          <Route path="massages/detail" element={<MassagesDetail />} />
+          <Route path="massages" element={<MassagesIndex />} />
+          <Route path="massages/masaz-1" element={<MassagesDetail id={1} />} />
+          <Route path="massages/masaz-2" element={<MassagesDetail id={2} />} />
+          <Route path="massages/masaz-3" element={<MassagesDetail id={3} />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

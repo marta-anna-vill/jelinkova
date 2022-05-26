@@ -46,10 +46,12 @@ const Layout = () => {
                                     <Link to="/about">O mně</Link>
                                 </li>
                                 <li>
-                                    <Link to="/massages/index">Masáže</Link>
+                                    <Link to="/massages">Masáže</Link>
                                     <ul>
                                         <li>
-                                            <Link to="/massages/detail">Masáž 1</Link>
+                                            <Link to="/massages/masaz-1" >Masáž 1</Link>
+                                            <Link to="/massages/masaz-2" >Masáž 2</Link>
+                                            <Link to="/massages/masaz-3" >Masáž 3</Link>
                                         </li>
                                     </ul>
                                 </li>

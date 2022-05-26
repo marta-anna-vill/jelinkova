@@ -1,10 +1,14 @@
+import { ImageContent } from "../../modules/ImageContent";
+import { massageContentData } from "../content/MassagesContent";
 
 
 const MassagesIndex = () => {
     return (
-        <>
-        MassagesIndex
-        </>
+        massageContentData.map(massageItem => {
+            return (
+                <ImageContent data={massageItem}></ImageContent>
+            )
+        })
     )
 }
 
