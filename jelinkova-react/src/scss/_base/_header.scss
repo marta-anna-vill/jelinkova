@@ -156,6 +156,9 @@ header {
                     }
 
                     &:hover {
+                        >a {
+                            color: $main-color-hover;
+                        }
                         >ul {
                             @include media($menu-break) {
                                 display: flex;
