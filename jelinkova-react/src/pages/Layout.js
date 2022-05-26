@@ -50,13 +50,22 @@ const Layout = () => {
                                     <span className="submenu-open"></span>
                                     <ul>
                                         <li>
-                                            <Link to="/massages/masaz-1" >Masáž 1</Link>
+                                            <Link to="/massages/masaz-1" >Těhotenská masáž</Link>
                                         </li>
                                         <li>
-                                            <Link to="/massages/masaz-2" >Masáž 2</Link>
+                                            <Link to="/massages/masaz-2" >Velvet touch masáž</Link>
                                         </li>
                                         <li>
-                                            <Link to="/massages/masaz-3" >Masáž 3</Link>
+                                            <Link to="/massages/masaz-3" >Sports massage</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/massages/masaz-3" >Sports massage</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/massages/masaz-3" >Sports massage</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/massages/masaz-3" >Sports massage</Link>
                                         </li>
                                     </ul>
                                 </li>

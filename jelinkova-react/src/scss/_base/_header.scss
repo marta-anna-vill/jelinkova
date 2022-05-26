@@ -98,39 +98,47 @@ header {
                         transition: 300ms ease;
                         position: relative;
                         z-index: 1;
-                        
-                        &:hover, &:focus {
+
+                        &:hover,
+                        &:focus {
                             color: $main-color-dark;
                         }
                     }
 
                     >ul {
-                        display: block;
+                        display: flex;
                         position: absolute;
+                        justify-content: space-around;
+                        padding: 2rem 5rem;
+                        flex-wrap: wrap;
                         top: 100%;
-                        left: 50%;
-                        transform: translateX(-50%);
+                        right: 0;
+                        /* left: 50%; */
+                        transform: translateX(3rem) translateY(-24px);
                         background-color: $base-white;
-                        min-width: 30rem;
+                        min-width: 78rem;
                         border-radius: 0 0 8px 8px;
                         box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 300ms ease-in-out;
 
 
-                        > li {
+                        >li {
                             //background-color: #bb81bb;
                             list-style: none;
                             text-align: center;
 
-                            &:first-child {
-                                >a {
-                                    padding-top: 3rem;
-                                }
-                            }
+                            // &:first-child {
+                            //     >a {
+                            //         padding-top: 3rem;
+                            //     }
+                            // }
 
                             &:last-child {
                                 >a {
                                     border-radius: 0 0 8px 8px;
-                                    padding-bottom: 3rem;
+                                    //padding-bottom: 3rem;
                                 }
                             }
 
@@ -150,7 +158,10 @@ header {
                     &:hover {
                         >ul {
                             @include media($menu-break) {
-                                display: block;
+                                display: flex;
+                                transform: translateX(3rem) translateY(0);
+                                visibility: visible;
+                                opacity: 1;
                             }
                         }
                     }
