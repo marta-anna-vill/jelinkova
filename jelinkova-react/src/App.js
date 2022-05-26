@@ -4,7 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import MassagesIndex from "./pages/Massages/index";
-import MassagesDetail from "./pages/Massages/detail";
+import MassagesDetail from "./pages/Massages/Detail";
 import NotFound from "./pages/NotFound";
 import './scss/style.scss';
 

@@ -73,7 +73,7 @@ const Layout = () => {
 
             <Outlet />
 
-            {/* <footer>
+            <footer>
                 <div className="footer-top">
                     <div className="base-container">
                         <div className="footer-top-inner">
@@ -164,7 +164,7 @@ const Layout = () => {
                     </div>
                 </div>
 
-            </footer> */}
+            </footer>
         </>
     )
 };

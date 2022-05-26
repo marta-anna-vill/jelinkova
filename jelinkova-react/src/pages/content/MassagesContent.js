@@ -8,7 +8,12 @@ export const massageContentData = [
         perex: "Je jemná individuálně zaměřená relaxační masáž pro nastávající maminky, vhodná od začátku 4. měsíce do konce 7. měsíce těhotenství. Pravidelná masáž v těhotenství harmonizuje organismus ženy, zlepšuje její imunitu a napomáhá jí na cestě k porodu zlepšováním jak fyzického stavu, tak psychické pohody. Uvolňuje stres a napětí, odstraňuje bolesti zad a šíje, uleví pocitu těžkých nohou, zmírní otoky nohou.",
         ctaName: "Learn more",
         ctaUrl: "#",
-        image: imageTest
+        image: imageTest,
+        gallery: [
+            imageTest,
+            imageTest,
+            imageTest
+        ]
     },
     {
         module: "MassageContent",
@@ -18,7 +23,12 @@ export const massageContentData = [
         perex: "Jedná se o relaxační techniku, kterou tvoří ucelený soubor hmatů celého těla. Technika se provádí v plynulém tempu, pracuje se s dynamikou masáže a je při ní důležitý klid a harmonie v pohybu. Začíná se masáží hlavy, pozvolna se přechází na partie zad a šíje. Potom pokračujeme masáží nohou, zezadu, zepředu, následně přecházíme na masáž rukou a vše je zakončeno uvolňující masáží dekoltu a obličeje.",
         ctaName: "Learn more",
         ctaUrl: "#",
-        image: imageTest
+        image: imageTest,
+        gallery: [
+            imageTest,
+            imageTest,
+            imageTest
+        ]
     },
     {
         module: "MassageContent",

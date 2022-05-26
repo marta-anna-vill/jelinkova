@@ -1,14 +1,20 @@
-import { ImageContent } from "../../modules/ImageContent";
 import { massageContentData } from "../content/MassagesContent";
+import MassagesCard from "./MassageCard";
 
 
 const MassagesIndex = () => {
     return (
-        massageContentData.map(massageItem => {
-            return (
-                <ImageContent data={massageItem}></ImageContent>
-            )
-        })
+        <div className="block">
+            <div className="base-container">
+                {
+                    massageContentData.map(massageItem => {
+                        return (
+                            <MassagesCard data={massageItem}></MassagesCard>
+                        )
+                    })
+                }
+            </div>
+        </div>
     )
 }
 
