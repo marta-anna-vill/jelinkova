@@ -10,12 +10,14 @@ header {
     .header {
         justify-content: space-between;
         display: flex;
+        align-items: center;
         padding: 0 4rem;
         pointer-events: all;
         border-radius: 8px;
         background-color: $base-white;
         box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
         position: relative;
+        min-height: 66px;
 
         &::after {
             content: '';
@@ -237,6 +239,7 @@ header {
         position: relative;
         display: block;
         align-items: center;
+        align-self: center;
 
         @include media($menu-break) {
             display: none;

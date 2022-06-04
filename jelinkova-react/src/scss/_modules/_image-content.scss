@@ -66,6 +66,7 @@
                     opacity: 0.5;
                     border-radius: 8px;
                     z-index: 1;
+
                     @include media(lg) {
                         content: '';
                         position: absolute;
@@ -103,6 +104,11 @@
             color: $base-black;
             text-align: center;
             font-weight: 300;
+            margin: 14rem auto auto auto;
+
+            @include media(md) {
+                margin: auto;
+            }
 
             @include media(lg) {
                 align-items: left;

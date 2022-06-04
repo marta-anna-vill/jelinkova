@@ -70,6 +70,7 @@ footer {
     .footer-title {
         color: $base-text;
         margin: 6rem 0 3.5rem;
+
         &:first-child {
             margin-top: 0;
         }
@@ -81,26 +82,40 @@ footer {
     gap: 2rem;
     flex-wrap: wrap;
     align-items: flex-start;
+
     img {
         min-height: 50px;
         max-height: 50px;
     }
 }
 
+.footer-top {
+    padding: 0 3rem;
+}
+
 .footer-top-inner {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    //display: grid;
+    //grid-template-columns: 1fr 2fr;
+
+    @include media(md) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
     .footer-top-content {
         padding: 10rem 10rem 10rem 0;
     }
+
     .footer-top-image {
         position: relative;
         padding: 10rem 0 10rem 10rem;
+
         img {
             position: relative;
-            z-index: 2;  
-            border-radius: 8px;          
+            z-index: 2;
+            border-radius: 8px;
         }
+
         &::after {
             content: '';
             position: absolute;
@@ -117,53 +132,65 @@ footer {
 .footer-middle {
     color: #fff;
     background-color: $main-color-dark;
+
     .footer-middle-inner {
         padding: 5rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 2fr;
+        //display: grid;
+        //grid-template-columns: 1fr 1fr 2fr;
+
+        @include media(md) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr; 
+        }
+
         .footer-middle-col {
             h3 {
                 margin: 0 0 3rem 0;
             }
+
             ul {
                 list-style: none;
                 padding: 0;
                 padding: 0;
+
                 li {
                     padding: 0;
                     margin: 0 0 1rem 0;
+
                     &::before {
                         display: none;
                     }
+
                     a {
                         text-decoration: none;
                         color: $base-text;
-                     }
+                    }
                 }
             }
-            
+
         }
     }
 }
 
 .footer-map {
     margin: 3rem 0 0 0;
+
     iframe {
         width: 100%;
-    height: 30rem;
-    overflow: hidden;
-    border-radius: 8px;
-    border: none;
-    outline: none;
+        height: 30rem;
+        overflow: hidden;
+        border-radius: 8px;
+        border: none;
+        outline: none;
     }
 }
 
 .footer-copy {
     color: #fff;
     background-color: $base-text;
+
     .footer-copy-inner {
         padding: 5rem 0;
         text-align: center;
     }
 }
-

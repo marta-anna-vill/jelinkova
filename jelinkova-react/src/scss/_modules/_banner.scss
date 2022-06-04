@@ -12,7 +12,12 @@
         background: rgba(255, 255, 255, 0.4);
         background: linear-gradient(189deg, rgba(255,255,255,0.7) 46%, rgba(255,255,255,0) 100%);
         background: linear-gradient(21deg, rgba(255,255,255,0.7) 56%, rgba(255,255,255,0) 100%);
+        background: rgba(255, 255, 255, 0.8);
         z-index: 2;
+
+        @include media($menu-break) {
+            background: linear-gradient(21deg, rgba(255,255,255,0.7) 56%, rgba(255,255,255,0) 100%);
+        }
 
         .banner-inner {
             display: flex;
