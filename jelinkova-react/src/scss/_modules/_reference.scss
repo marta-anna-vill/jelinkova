@@ -1,19 +1,11 @@
+.reference-wrap {
+    margin: 10rem 0;
+}
+
 .reference-container {
-    // display: grid;
-    // grid-gap: 10rem;
-    // grid-template-columns: 1fr 1fr 1fr;
-    margin: 4rem 2rem 10rem 0;
-
-    @include media(xs) {
-        margin: 4rem 10rem 10rem 10rem;
-    }
-
-    @include media(md) {
-        display: grid;
-        grid-gap: 10rem;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 4rem 0 10rem 0;
-    }
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: 1fr 1fr 1fr;
 
     .reference-item {
         position: relative;

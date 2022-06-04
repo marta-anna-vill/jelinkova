@@ -3,85 +3,16 @@ import { Outlet, Link } from "react-router-dom";
 import iconFacebook from '../images/icons8-facebook.svg';
 import iconInstagram from '../images/icons8-instagram.svg';
 import imageFooter from '../images/footer-photo.jpg';
-import { useEffect, useState } from "react";
-import logoHeader from '../images/logo-jelinkova-svg.svg';
+import { Header } from "../header/Header";
 
 
 const Layout = () => {
 
-    const [open, toggle] = useState(false);
-    const [scroll, changeScroll] = useState(0);
-
-    const handleToggle = () => {
-        toggle(!open);
-    };
-
-    const handleScroll = () => {
-        changeScroll(window.pageYOffset);
-    };
-
-    useEffect(() => {
-        window.addEventListener("scroll", function () {
-            handleScroll();
-        });
-    });
+   
 
     return (
         <>
-            <header className={open ? "open" : ""}>
-                <div className="header-container">
-                    <div className="header">
-                        <div className="header-logo">
-                            <a href="/">
-                                <img src={logoHeader} alt="Logo-massages" />
-                            </a>
-                        </div>
-                        <nav className="header-menu">
-                            <ul>
-
-                                <li>
-                                    <Link to="/">Domů</Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">O mně</Link>
-                                </li>
-                                <li>
-                                    <Link to="/massages">Masáže</Link>
-                                    <span className="submenu-open"></span>
-                                    <ul>
-                                        <li>
-                                            <Link to="/massages/masaz-1" >Těhotenská masáž</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/massages/masaz-2" >Velvet touch masáž</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/massages/masaz-3" >Sports massage</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/massages/masaz-3" >Sports massage</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/massages/masaz-3" >Sports massage</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/massages/masaz-3" >Sports massage</Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div className="header-cta">
-                            <Link className="btn btn-primary" to="/about">Kontakt</Link>
-                        </div>
-                        <div className="hamburger-menu">
-                            <a className="open-menu" onClick={handleToggle}>
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            <Header />
 
             <div className="header-space"></div>
 
