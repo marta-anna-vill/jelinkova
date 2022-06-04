@@ -9,6 +9,7 @@ export const massageContentData = [
         ctaName: "Learn more",
         ctaUrl: "#",
         image: imageTest,
+        price: 3000,
         gallery: [
             imageTest,
             imageTest,
@@ -24,6 +25,7 @@ export const massageContentData = [
         ctaName: "Learn more",
         ctaUrl: "#",
         image: imageTest,
+        price: 3000,
         gallery: [
             imageTest,
             imageTest,

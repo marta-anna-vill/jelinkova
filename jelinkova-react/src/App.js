@@ -7,6 +7,7 @@ import MassagesIndex from "./pages/Massages/index";
 import MassagesDetail from "./pages/Massages/Detail";
 import NotFound from "./pages/NotFound";
 import './scss/style.scss';
+import Pricing from "./pages/Pricing";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="massages/masaz-1" element={<MassagesDetail id={1} />} />
           <Route path="massages/masaz-2" element={<MassagesDetail id={2} />} />
           <Route path="massages/masaz-3" element={<MassagesDetail id={3} />} />
+          <Route path="cenik" element={<Pricing />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

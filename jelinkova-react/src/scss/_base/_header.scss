@@ -157,7 +157,7 @@ header {
 
                     &:hover {
                         >a {
-                            color: $main-color-hover;
+                            color: $main-color-hover!important;
                         }
                         >ul {
                             @include media($menu-break) {
@@ -170,6 +170,11 @@ header {
                         .submenu-open {
                             transform: translateX(-50%) translateY(calc(-50% - 18px));
                         }
+                    }
+                }
+                &.any-link-hovered {
+                    > li > a {
+                        color: #b8b8b8;
                     }
                 }
             }
