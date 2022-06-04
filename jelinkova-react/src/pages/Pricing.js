@@ -5,9 +5,12 @@ import PriceTable from "../modules/PriceTable";
 const Pricing = () => {
     return (
         <div className="block">
-            {
-                <PriceTable data={_contentServices.getMassagesPrices(massageContentData)} />
-            }
+            <div className="base-container">
+                <h1 className="text-center mt-0">Ceník</h1>
+                {
+                    <PriceTable data={_contentServices.getMassagesPrices(massageContentData)} />
+                }
+            </div>
         </div>
     )
 }
