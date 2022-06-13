@@ -37,10 +37,30 @@
     //display: grid;
     //grid-template-columns: 1fr 1fr;
 
+    // @include media(xs) {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    // }
+
     @include media(xs) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &:nth-child(even) {
+            .crosslink-item-photo {
+                order: -1;
+                @include media(xl) {
+                    order: 1;
+                }
+            }
+        }
+
+        &.reverse-item .crosslink-item-photo {
+            @include media(xl) {
+                order: -1;
+            }
+        }
 
     .crosslink-item-content {
         display: flex;

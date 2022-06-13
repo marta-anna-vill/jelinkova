@@ -63,6 +63,14 @@ header {
             margin-left: auto;
             justify-content: right;
 
+            //potrebuji sem dostat menu v respu s těmito styly: =>
+
+            // background-color: white;
+            // border-radius: 8px;
+            // box-shadow: 0 5px 20px 0 rgb(0 0 0 / 20%);
+            // max-width: 140rem;
+            // display: block;
+
             @include media($menu-break) {
                 position: static;
                 display: flex;
@@ -157,8 +165,9 @@ header {
 
                     &:hover {
                         >a {
-                            color: $main-color-hover!important;
+                            color: $main-color-hover  !important;
                         }
+
                         >ul {
                             @include media($menu-break) {
                                 display: block;
@@ -167,13 +176,15 @@ header {
                                 opacity: 1;
                             }
                         }
+
                         .submenu-open {
                             transform: translateX(-50%) translateY(calc(-50% - 18px));
                         }
                     }
                 }
+
                 &.any-link-hovered {
-                    > li > a {
+                    >li>a {
                         color: #b8b8b8;
                     }
                 }
@@ -211,15 +222,18 @@ header {
                 position: relative;
                 z-index: 2;
                 transition: 200ms ease;
+
                 svg {
                     height: 24px;
                     min-width: 24px;
                     fill: $base-white;
                     transition: 200ms ease;
                 }
+
                 &:hover {
                     transform: scale(1.2);
                     border-radius: 5px;
+
                     svg {
                         transform: scale(.85);
                     }

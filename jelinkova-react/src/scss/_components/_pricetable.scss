@@ -1,20 +1,81 @@
 .price-table-container {
-    max-width: 70rem;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 100rem;
+    margin: 0 auto 10rem auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-gap: 1rem;
+
+    @include media(md) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .price-table-item {
         background-color: #f1e5f0;
-        display: flex;
-        justify-content: space-between;
         border-radius: 8px;
-        align-items: center;
-        min-height: 6rem;
-        margin: 0 0 1rem 0;
-        padding: 2.5rem;
+        overflow: hidden;
+
+        .price-table-item-inner {
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 0.75fr;
+            grid-gap: 3rem;
+            align-items: center;
+            min-height: 6rem;
+            padding: 2.5rem;
+
+            @include media(xxs) {
+                grid-template-columns: 2fr 1fr 0.5fr;
+            }
+
+            @include media(xs) {
+                grid-template-columns: 3fr 1fr 1fr;
+            }
+
+            @include media(md) {
+                grid-template-columns: 4fr 1fr 1fr;
+            }
+        }
+
+        .price-table-item-lenght {
+            font-weight: 600;
+        }
 
         .price-table-item-price {
             font-weight: 600;
+        }
+
+        .price-table-type-container {
+            border-top: 1px solid $main-color-dark;
+            background-color: #f4f0f3;
+            .price-table-type {
+                display: grid;
+                grid-template-columns: 2fr 0.5fr 0.75fr;
+                grid-gap: 3rem;
+                align-items: center;
+                min-height: 4rem;
+                padding: 1rem 2.5rem;
+                .price-table-item-name {
+                    //margin: 0 0 0 6rem;
+                }
+                &:first-child {
+                    padding-top: 3rem;
+                }
+                &:last-child {
+                    padding-bottom: 3rem;
+                }
+                @include media(xxs) {
+                    grid-template-columns: 2fr 1fr 0.5fr;
+                }
+
+                @include media(xs) {
+                    grid-template-columns: 3fr 1fr 1fr;
+                }
+
+                @include media(md) {
+                    grid-template-columns: 4fr 1fr 1fr;
+                }
+            }
         }
     }
 }

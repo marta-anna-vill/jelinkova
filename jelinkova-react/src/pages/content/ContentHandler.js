@@ -7,7 +7,15 @@ export const _contentServices = {
         return massages.map(item => {
             return {
                 title: item.title ?? "",
-                price: item.price ?? ""
+                price: item.price ?? "",
+                duration: item.duration ?? "",
+                types: item.types?.map(type => {
+                    return {
+                        title: type.title ?? "",
+                        price: type.price ?? "",
+                        duration: type.duration ?? "",
+                    }
+                })
             }
         });
     }

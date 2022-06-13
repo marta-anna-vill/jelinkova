@@ -47,19 +47,19 @@ export const Header = () => {
                                             <Link to="/massages/masaz-1" >Těhotenská masáž</Link>
                                         </li>
                                         <li>
-                                            <Link to="/massages/masaz-2" >Anticelulitidní masáž</Link>
+                                            <Link to="/massages/masaz-2" >Velvet touch massage</Link>
                                         </li>
                                         <li>
-                                            <Link to="/massages/masaz-3" >Manuální lymfodrenáž</Link>
+                                            <Link to="/massages/masaz-3" >Breussova masáž a Balneo</Link>
                                         </li>
                                         <li>
-                                            <Link to="/massages/masaz-3" >Klasická masáž</Link>
+                                            <Link to="/massages/masaz-4" >Manuální lymfodrenáž</Link>
                                         </li>
                                         <li>
-                                            <Link to="/massages/masaz-3" >Sports massage</Link>
+                                            <Link to="/massages/masaz-5" >Anticelulitidní masáž</Link>
                                         </li>
                                         <li>
-                                            <Link to="/massages/masaz-3" >Anticelulitidní masáž</Link>
+                                            <Link to="/massages/masaz-6" >Klasická masáž</Link>
                                         </li>
                                     </ul>
                                 </li>
