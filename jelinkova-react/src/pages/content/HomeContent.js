@@ -23,6 +23,7 @@ export const homeContentData = [
         perex: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
         ctaName: "Chci masáž",
         ctaUrl: "/massages",
+        customClass: "top-image-homepage",
         image: topImagePhoto
     },
     {

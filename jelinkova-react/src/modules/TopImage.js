@@ -12,9 +12,9 @@ export const TopImage = (props) => {
     });
 
     return (
-        <div className="top-image">
+        <div className={"top-image " + props.customClass ?? ''}>
             <div className="base-container">
-                <div className="top-image-inner">
+                <div className='top-image-inner '>
                     <div className="top-image-content">
                         <div className="top-image-content-inner">
                         <span className="marker">{props.marker}</span>

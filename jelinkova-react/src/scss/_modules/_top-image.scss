@@ -4,18 +4,15 @@
     color: $base-black;
 
     .top-image-inner {
-        min-height: 72rem;
+        min-height: 44rem;
 
         @include media(xs) {
-            min-height: 72rem;
             margin: 0;
         }
 
         @include media(lg) {
-            margin: 0;
             display: grid;
             grid-template-columns: 2fr 1fr;
-            min-height: 85rem;
         }
 
         .top-image-photo {
@@ -52,18 +49,12 @@
         .top-image-content {
             position: relative;
             z-index: 3;
-            padding: 20rem 0 10rem 0;
             font-size: 19px;
             display: flex;
             align-items: center;
-
-            @include media(lg) {
-                padding: 20rem 0 10rem 8rem;
-                font-size: 24px;
-            }
-
-            @include media(xxl) {
-                padding: 10rem 0 10rem 8rem;
+            padding: 22rem 0 5rem 0;
+            @include media(md) {
+                padding: 22rem 0 8rem 8rem;
             }
 
             .top-image-content-inner {
@@ -84,6 +75,19 @@
                     letter-spacing: 2px;
                 }
             }
+        }
+    }
+
+    &.top-image-homepage {
+        .top-image-inner {
+            min-height: 72rem;
+            .top-image-content {
+                padding: 22rem 0 20rem 0;
+                @include media(md) {
+                    padding: 25rem 0 20rem 8rem;
+                }
+            }
+            
         }
     }
 }
