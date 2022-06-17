@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import logoHeader from '../images/logo-jelinkova-svg.svg';
+import logoHeader from '../images/logo.svg';
 export const Header = () => {
     const [open, toggle] = useState(false);
     const [scroll, changeScroll] = useState(0);
