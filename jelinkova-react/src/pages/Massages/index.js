@@ -10,19 +10,18 @@ const MassagesIndex = () => {
         <TopImage data={contentHandler(homeContentData, "TopImage", 3)} />
         <div className="massage-section">
             <div className="base-container">
-                <div className="massage-perex">
-                    Přečtěte si bližší informace o masážích, které nabízíme. Vyberte si a kontaktujte mě. 
-                </div>
-                {
-                    massageContentData.map(massageItem => {
-                        return (
-                            <>
-                                <MassagesCard data={massageItem}></MassagesCard>
-                            </>
+                <div className="massages-container">
+                    {
+                        massageContentData.map(massageItem => {
+                            return (
+                                <>
+                                    <MassagesCard data={massageItem}></MassagesCard>
+                                </>
 
-                        )
-                    })
-                }
+                            )
+                        })
+                    }
+                </div>
             </div>
             {/* <div className="cta-massage">
                 <div className="base-container">

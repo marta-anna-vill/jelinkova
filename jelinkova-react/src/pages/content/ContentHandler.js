@@ -6,6 +6,7 @@ export const _contentServices = {
     getMassagesPrices: (massages) => {
         return massages.map(item => {
             return {
+                id: item.id ?? 0,
                 title: item.title ?? "",
                 price: item.price ?? "",
                 duration: item.duration ?? "",

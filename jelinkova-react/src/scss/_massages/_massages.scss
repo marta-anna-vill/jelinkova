@@ -1,41 +1,75 @@
-.massage-card-item {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 5rem;
-    border-radius: 8px;
-    background-color: $color-line;
-    margin-bottom: 5rem;
-
-    .massage-card-item-title {
-        margin: 0 0 4rem 0;
-    }
-
-    // .massage-card-item-image {
-
-    // }
-    .massage-card-item-content {
-        max-width: 80rem;
-    }
-
-    .massage-card-item-gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 5rem;
-        border-radius: 8px;
-        overflow: hidden;
-        height: 40rem;
-
-        .massage-card-item-gallery-item {
-            img {
-                min-height: 100%;
-                max-height: 100%;
-                object-fit: cover;
-                width: 100%;
-            }
-        }
-    }
+.massages-container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-// .massage-perex {
-//     padding: 0 0 2rem 0;
-// }
+.massage-card-item {
+    position: relative;
+    padding: 10rem 0;
+    margin-bottom: 20rem;
+    .massage-card-item-inner {
+        position: relative;
+        z-index: 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+        .massage-card-item-title {
+            margin: 0 0 4rem 0;
+        }
+        .massage-card-item-content {
+            position: relative;
+            z-index: 5;
+            padding: 15rem 5rem;
+            background-color: $color-line;   
+            border-radius: 8px 0 0 8px;
+            
+        }
+        .massage-card-item-link {
+            margin: 3rem 0 0 0;
+        }
+        .massage-card-item-gallery {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            border-radius: 0 8px 8px 0;
+            z-index: 5;
+            .massage-card-item-gallery-item {
+                &:not(:first-child) {
+                    display: none;
+                }
+                img {
+                    min-height: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
+            .massage-card-item-gallery-openner {
+                position: absolute;
+                right: 3rem;
+                bottom: 3rem;
+                .btn {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        &::before {
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: -7.7rem;
+            left: -10rem;
+            height: calc(100% + 10rem);
+            width: 50%;
+            border: 3.4rem solid #f5ebf4;
+            border-radius: 8px;
+            background-color: transparent;
+            z-index: 1;
+        }
+    }
+    
+}

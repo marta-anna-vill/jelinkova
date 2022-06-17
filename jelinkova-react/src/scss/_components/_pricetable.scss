@@ -11,16 +11,45 @@
         padding-right: 20px;
     }
 
+    .price-table-header {
+        padding: 0 2.5rem 1rem 2.5rem;
+        display: grid;
+        grid-gap: 3rem;
+        font-weight: 700;
+        font-size: 20px;
+        @include media(xxs) {
+            grid-template-columns: 2fr 1fr 0.5fr;
+        }
+        @include media(xs) {
+            grid-template-columns: 3fr 1fr 1fr;
+        }
+        @include media(md) {
+            grid-template-columns: 4fr 1fr 1fr;
+        }
+        .price-table-header-duration {
+            text-align: right;
+        }
+        .price-table-header-price {
+            text-align: right;
+            
+        }
+    }
+
+
     .price-table-item {
         background-color: #f1e5f0;
         border-radius: 8px;
         overflow: hidden;
 
+        &.active {
+            background-color: $main-color;
+            color: $base-white;
+        }
+
         .price-table-item-inner {
             display: grid;
             grid-template-columns: 2fr 0.5fr 0.75fr;
             grid-gap: 3rem;
-            align-items: center;
             min-height: 6rem;
             padding: 2.5rem;
 
@@ -37,12 +66,14 @@
             }
         }
 
-        .price-table-item-lenght {
+        .price-table-item-duration {
             font-weight: 600;
+            text-align: right;
         }
 
         .price-table-item-price {
             font-weight: 600;
+            text-align: right;
         }
 
         .price-table-type-container {

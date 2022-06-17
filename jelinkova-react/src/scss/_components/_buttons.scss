@@ -66,6 +66,7 @@
     color: $main-color-dark;
     border-color: $main-color-dark;
     &:hover, &:focus {
+        cursor: pointer;
         color: $main-color-hover;
         border-color: $main-color-hover;
     }
@@ -76,4 +77,14 @@
     background-color: $main-color-dark;
     color: $base-black;
     height: 10rem;
+}
+
+.link {
+    font-weight: 500;
+    color: $main-color-dark;
+    transition: 300ms ease-in-out;
+    &:hover, &:focus {
+        color: $main-color-hover;
+        cursor: pointer;
+    }
 }

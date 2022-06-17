@@ -5,7 +5,7 @@
     .image-content-inner {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 3rem 0 9rem 0;
+        padding: 6.7rem 0 12.1rem 0;
 
         @include media(md) {
             display: grid;
@@ -57,31 +57,31 @@
                     opacity: 0.5;
                     border-radius: 8px;
                     z-index: 1;
-
+            
                     @include media(lg) {
-                        content: '';
+                        content: "";
                         position: absolute;
-                        top: 60px;
-                        left: 50px;
-                        height: calc(100% + 3rem);
-                        width: calc(100% + 5rem);
+                        top: 40px;
+                        left: 30px;
+                        height: calc(100% + 2rem);
+                        width: calc(100% + 3rem);
                         background-color: $main-color;
-                        opacity: 0.5;
+                        opacity: 0.4;
                         z-index: 1;
                     }
                 }
-
+            
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
-                    top: -30px;
-                    right: 30px;
-                    height: calc(100% + 60px);
+                    top: -66px;
+                    right: 20px;
+                    height: calc(100% + 119px);
                     width: 100%;
-                    border: 2px solid $main-color;
+                    border: 3.4rem solid #f5ebf4;
                     border-radius: 8px;
                     background-color: transparent;
-                    z-index: 2;
+                    z-index: 1;
                 }
             }
         }
