@@ -8,7 +8,7 @@ import { TopImage } from "../../modules/TopImage";
 const MassagesIndex = () => {
     return (<>
         <TopImage data={contentHandler(homeContentData, "TopImage", 3)} />
-        <div className="block">
+        <div className="massage-section">
             <div className="base-container">
                 <div className="massages-container">
                     {
@@ -23,11 +23,14 @@ const MassagesIndex = () => {
                     }
                 </div>
             </div>
-            <div className="cta-massage">
+            {/* <div className="cta-massage">
                 <div className="base-container">
-                    <h3>Kdy se poradit s lékařem?</h3>
+                    <div className="cta-massage-inner">
+                        <h3>Kdy se poradit s lékařem?</h3>
+                        <div className="btn btn-default">Více</div>
+                    </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </>
     )

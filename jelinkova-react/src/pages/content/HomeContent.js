@@ -5,9 +5,9 @@ import BenefitPhoto1 from '../../images/photo-benefit-item01.jpg';
 import BenefitPhoto2 from '../../images/photo-benefit-item02.jpg';
 import BenefitPhoto3 from '../../images/photo-benefit-item03.jpg';
 import BenefitPhoto4 from '../../images/photo-benefit-item04.jpg';
-import imageContentPhoto1 from '../../images/image-content-photo.jpg';
+import imageContentPhoto1 from '../../images/flower.jpg';
 import imageContentPhoto2 from '../../images/woman5.jpg';
-import bannerImage from '../../images/photo-banner03.jpg';
+import bannerImage from '../../images/background.jpg';
 import imageBlackContent from '../../images/wellness-g0778c1dcb_1920.jpg';
 import imageCrosslink from '../../images/stone-green.jpg';
 import imageCrosslink1 from '../../images/feet.jpg'
@@ -78,7 +78,7 @@ export const homeContentData = [
     {
         module: "ImageContent",
         id: 1,
-        title: "Těhotenská masáž",
+        title: "Masáž",
         perex: "Přestože je těhotenství nejkrásnějším obdobím ženy, mohou v tuto dobu nastat i různé nečekané nepříjemnosti. Nejčastěji nastávající maminky trápí bolesti zad a to převážně v oblasti bederní a krční páteře. Bolest způsobuje především váha rostoucího miminka. Vyskytnout se mohou, ale i otoky horních a dolních končetin, které jsou velmi obtěžující. Nebo na vás dolehne každodenní stres a únava. Těhotenská masáž působí blahodárně na psychické a fyzické uvolnění nastávající maminky. Kladný vliv má také na miminko, protože dochází k uvolnění svalů, díky kterému má dítě více prostoru.",
         ctaName: "Čtěte více",
         ctaUrl: "https://martinatrnkova.cz/2021/01/13/tehotenska-masaz-bez-obav/",
@@ -99,7 +99,7 @@ export const homeContentData = [
         id: 1,
         title: "Potřebujete poradit?",
         perex: "Nejste si jistí, jakou péči vybrat pro sebe, či své blízké? Ozvěte se mi a nechte si poradit. ",
-        ctaName: "Learn more",
+        ctaName: "Ozvěte se mi",
         ctaUrl: "#",
         image: bannerImage
     },
