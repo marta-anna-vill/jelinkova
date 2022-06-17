@@ -8,8 +8,11 @@ import { TopImage } from "../../modules/TopImage";
 const MassagesIndex = () => {
     return (<>
         <TopImage data={contentHandler(homeContentData, "TopImage", 3)} />
-        <div className="block">
+        <div className="massage-section">
             <div className="base-container">
+                <div className="massage-perex">
+                    Přečtěte si bližší informace o masážích, které nabízíme. Vyberte si a kontaktujte mě. 
+                </div>
                 {
                     massageContentData.map(massageItem => {
                         return (
@@ -21,11 +24,14 @@ const MassagesIndex = () => {
                     })
                 }
             </div>
-            <div className="cta-massage">
+            {/* <div className="cta-massage">
                 <div className="base-container">
-                    <h3>Kdy se poradit s lékařem?</h3>
+                    <div className="cta-massage-inner">
+                        <h3>Kdy se poradit s lékařem?</h3>
+                        <div className="btn btn-default">Více</div>
+                    </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </>
     )
