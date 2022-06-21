@@ -37,18 +37,20 @@ header {
         }
 
         .header-logo {
-            padding: .5rem 1rem;
+            padding: 1.2rem 1rem;
             background-color: $base-white;
             position: relative;
             z-index: 1;
 
             a {
-                display: block;
-
-                img {
-                    max-height: 8rem;
-                    min-height: 8rem;
-                    height: 8rem !important;
+                display: flex;
+                svg {
+                    max-height: 7rem;
+                    min-height: 7rem;
+                    height: 7rem !important;
+                    .st0{fill:#f5ebf4;}
+                    .st1{fill:#9f6599;}
+                    .st2{fill:#bc81b6;}
                 }
             }
         }
